@@ -22,6 +22,7 @@ import android.view.ViewGroup;
 import android.view.Window;
 import android.widget.Button;
 import android.widget.GridView;
+import android.widget.ImageView;
 import android.widget.TextView;
 
 import com.nostra13.universalimageloader.cache.disc.impl.UnlimitedDiscCache;
@@ -76,6 +77,15 @@ public class GalleryActivity extends Activity
 
 	private void initView()
 	{
+		ImageView backImageView = (ImageView) findViewById(R.id.backImageView);
+		backImageView.setOnClickListener(new View.OnClickListener()
+		{
+			public void onClick(View v)
+			{
+				finish();
+			}
+		});
+		
 		noImageTextView = (TextView) findViewById(R.id.noImageTextView);
 		
 		int maxCount = getIntent().getIntExtra("maxCount", -1);
