@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Test</string>
+    <string name="confirm">确定</string>
+    <string name="back">返回</string>
+    <string name="image">图片</string>
+    <string name="check">选中</string>
+    <string name="pick_image">选择图片</string>
+    <string name="no_image">未找到图片</string>
+
+</resources>
